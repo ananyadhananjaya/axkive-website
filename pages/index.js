@@ -9,7 +9,7 @@ const Page = () =>{
             <Box display={{md:'flex'}}>
                 <Box flexGrow={1}>
                      <Heading as="h2" variant={"page-title"}>
-                         Ananya dhananjaya
+                         Ananya Dhananjaya
                      </Heading>
                      <p>Digital craftsman ( Artist / Developer / Designer )</p>
                 </Box>
