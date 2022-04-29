@@ -44,8 +44,6 @@ const Navbar = props => {
       position="fixed"
       as="nav"
       w="100%"
-      bg={useColorModeValue('#ffffff40', '#20202380')}
-      css={{ backdropFilter: 'blur(10px)' }}
       zIndex={1}
       {...props}
     >
@@ -74,9 +72,6 @@ const Navbar = props => {
           <LinkItem href="/works" path={path}>
             Works
           </LinkItem>
-          <LinkItem href="/posts" path={path}>
-            Posts
-          </LinkItem>
           <LinkItem
             target="_blank"
             href="https://github.com/ananyadhananjaya/axkive-website"
@@ -92,9 +87,8 @@ const Navbar = props => {
         </Stack>
 
         <Box flex={1} align="right">
-          <ThemeToggleButton />
-
-          <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
+        <ThemeToggleButton />
+          <Box ml={2} p={2} display={{ base: 'inline-block', md: 'none' }}>
             <Menu isLazy id="navbar-menu">
               <MenuButton
                 as={IconButton}
@@ -120,7 +114,7 @@ const Navbar = props => {
                 </MenuItem>
               </MenuList>
             </Menu>
-          </Box>
+          </Box>        
         </Box>
       </Container>
     </Box>
