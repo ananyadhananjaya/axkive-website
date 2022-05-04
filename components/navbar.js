@@ -55,20 +55,17 @@ const Navbar = props => {
         align="center"
         justify="space-between"
       >
-        <Flex align="center" mr={5}>
-          <Heading as="h1" size="lg" letterSpacing={'tighter'}>
-            <Logo />
-          </Heading>
-        </Flex>
-
         <Stack
-          direction={{ base: 'column', md: 'row' }}
+          direction={{ md: 'row' }}
           display={{ base: 'none', md: 'flex' }}
           width={{ base: 'full', md: 'auto' }}
           alignItems="center"
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
         >
+          <LinkItem href="/" path={path}>
+            About
+          </LinkItem>
           <LinkItem href="/works" path={path}>
             Works
           </LinkItem>
@@ -89,7 +86,7 @@ const Navbar = props => {
         <Box flex={1} align="right">
         <ThemeToggleButton />
           <Box ml={2} p={2} display={{ base: 'inline-block', md: 'none' }}>
-            <Menu isLazy id="navbar-menu">
+            <Menu>
               <MenuButton
                 as={IconButton}
                 icon={<HamburgerIcon />}
@@ -102,9 +99,6 @@ const Navbar = props => {
                 </NextLink>
                 <NextLink href="/works" passHref>
                   <MenuItem as={Link}>Works</MenuItem>
-                </NextLink>
-                <NextLink href="/posts" passHref>
-                  <MenuItem as={Link}>Posts</MenuItem>
                 </NextLink>
                 <MenuItem
                   as={Link}
