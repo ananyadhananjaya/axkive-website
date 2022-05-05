@@ -66,7 +66,7 @@ const Navbar = props => {
           <LinkItem href="/" path={path} color={useColorModeValue('black', 'white')}>
             About
           </LinkItem>
-          <LinkItem href="/works" path={path}>
+          <LinkItem href="/works" path={path} color={useColorModeValue('black', 'white')}>
             Works
           </LinkItem>
           <LinkItem
@@ -77,6 +77,7 @@ const Navbar = props => {
             alignItems="center"
             style={{ gap: 4 }}
             pl={2}
+            color={useColorModeValue('black', 'white')}
           >
             <IoLogoGithub />
             Source

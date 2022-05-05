@@ -1,33 +1,29 @@
 import { Container, Box, Heading, useColorModeValue, Image, Spacer} from '@chakra-ui/react'
+import { motion } from 'framer-motion'
 
 const Page = () => {
   return (
     <Container>
       <Box display={{ md: 'flex' }}  >
+        <motion.div animate={{y: 100}} transition={{delay: 1, duration: 2}} >
         <Box flexGrow={1}>
-          <Heading as="h2" variant={'page-title'}>
+          <Heading as="h2" size='xl'>
             Ananya Dhananjaya
           </Heading>
-          <p>Digital craftsman ( Artist / Developer / Digital Nomad )</p>
+          <p>Web developer</p>
         </Box>
+        </motion.div>
         <Box m="3" alignContent={"center"} w="100px" h="100px" borderColor="whiteAlpha.400" borderWidth={3} borderStyle="solid" borderRadius={'full'} display="inline-block" >
           <Image borderRadius={'full'} w="100%" h="100%" src="/images/ananya.jpg" alt="Profile Image" />
       </Box>
-      </Box>
-      <Box
-        borderRadius="lg"
-        bg={useColorModeValue('gray.50', 'gray.500')}
-        p={3}
-        m={3}
-        align="center"
-        css={{backdropFilter: 'blur(10px)'}}
-      >
-        Hello, I&apos;m a frontend developer based in India!
-      </Box>
+      </Box>    
+      <motion.div animate={{y: 100}} transition={{delay: 1, duration: 2}} >
       <Box>
           Ananya is a developer based in Mysore, India with a passion for building digital services/stuff she wants.
-          She loves taking random pictures and hanging around in Cafes. She has around 2 years in web development and is currently working for Infosys. 
+          She likes to build websites to help business run better.
+          She has around two years in web development and is currently working for Infosys. 
       </Box>
+      </motion.div>
       
     </Container>
   )
