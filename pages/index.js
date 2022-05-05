@@ -3,21 +3,22 @@ import { motion } from 'framer-motion'
 
 const Page = () => {
   return (
-    <Container>
+    <Container mt={20}>
       <Box display={{ md: 'flex' }}  >
-        <motion.div initial={{opacity: 0}} exit={{opacity: 0}} animate={{y: 100, opacity: 1}} transition={{delay: 0.5, duration: 2}} >
-        <Box flexGrow={1}>
+        <motion.div initial={{opacity: 0}} exit={{opacity: 0}} animate={{y: 15, opacity: 1}} transition={{delay: 0.5, duration: 2}} >
+        <Box >
           <Heading as="h2" size='xl'>
             Ananya Dhananjaya
           </Heading>
           <p>Web developer</p>
         </Box>
         </motion.div>
-        <Box m="3" alignContent={"center"} w="100px" h="100px" borderColor="whiteAlpha.400" borderWidth={3} borderStyle="solid" borderRadius={'full'} display="inline-block" >
+        <Box m="3" mt={{sm: 10, md: 10, lg: 0}} w="100px" h="100px" borderColor="whiteAlpha.400" borderWidth={3} borderStyle="solid" borderRadius={'full'} display="flex-end" >
           <Image borderRadius={'full'} w="100%" h="100%" src="/images/ananya.jpg" alt="Profile Image" />
       </Box>
-      </Box>    
-      <motion.div animate={{y: 100}} transition={{delay: 0.7, duration: 2}} >
+      </Box>
+          
+      <motion.div animate={{y: 40}} transition={{delay: 0.7, duration: 1}} >
       <Box>
           Ananya is a developer based in Mysore, India with a passion for building digital services/stuff she wants.
           She likes to build websites to help business run better.
