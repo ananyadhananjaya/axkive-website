@@ -15,7 +15,7 @@ const Works = () => {
         <Heading fontSize={22} mb={4}>
           Works
         </Heading>
-        <SimpleGrid columns={2} spacing={10}>
+        <SimpleGrid columns={[1,1,2]} spacing={10}>
           <Section>
             <WorkGridItem
               id="static-portfolio"
@@ -49,3 +49,5 @@ const Works = () => {
 }
 
 export default Works
+export { getServerSideProps } from '../components/chakra'
+
