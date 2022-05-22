@@ -1,6 +1,5 @@
 import { Container, Box, Heading, Image} from '@chakra-ui/react'
 import { motion } from 'framer-motion'
-import Footer from '../components/footer'
 
 const Page = () => {
   return (
