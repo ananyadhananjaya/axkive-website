@@ -1,5 +1,6 @@
 import { Container, Box, Heading, Image} from '@chakra-ui/react'
 import { motion } from 'framer-motion'
+import Footer from '../components/footer'
 
 const Page = () => {
   return (
@@ -25,7 +26,6 @@ const Page = () => {
           She has around two years experience in web development and is currently working for Infosys. 
       </Box>
       </motion.div>
-      
     </Container>
   )
 }
